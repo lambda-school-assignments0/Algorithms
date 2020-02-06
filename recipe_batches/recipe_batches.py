@@ -3,7 +3,7 @@
 import math
 
 def recipe_batches(recipe, ingredients):
-  pass 
+  return min([ingredients[item] // recipe[item] if item in ingredients else 0 for item in recipe])
 
 
 if __name__ == '__main__':
